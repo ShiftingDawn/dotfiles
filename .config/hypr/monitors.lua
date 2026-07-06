@@ -11,3 +11,9 @@ hl.monitor({
   position = "2560x0",
   scale = 1.25
 })
+
+hl.config({
+  xwayland = {
+    force_zero_scaling = true
+  }
+})

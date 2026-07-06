@@ -9,4 +9,8 @@ hyprland
 hyprpaper
 noctalia
 alacritty
+zen-browser
+grim
+slurp
+swappy
 ```

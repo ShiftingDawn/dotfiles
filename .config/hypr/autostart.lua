@@ -2,7 +2,8 @@ local programs = {
   "steam -silent",
   "signal-desktop --start-in-tray",
   "discord --start-minimized",
-  "affine && hyprctl dispatch 'hl.dsp.window.close({window=\"class:AFFiNE\"})'",
+  "affine",
+  "sleep 2 && hyprctl dispatch 'hl.dsp.window.close({window=\"class:AFFiNE\"})'",
 }
 
 hl.on("hyprland.start", function ()

@@ -1,9 +1,10 @@
-local programs = {  
+local programs = {
+  "/usr/lib/pam_kwallet_init",
   "steam -silent",
-  "signal-desktop --start-in-tray",
-  "discord --start-minimized",
+  "signal-desktop --start-in-tray --password-store=kwallet6",
+  "webcord --start-minimized",
   "affine",
-  "sleep 2 && hyprctl dispatch 'hl.dsp.window.close({window=\"class:AFFiNE\"})'",
+  "sleep 3 && hyprctl dispatch 'hl.dsp.window.close({window=\"class:AFFiNE\"})'",
 }
 
 hl.on("hyprland.start", function ()

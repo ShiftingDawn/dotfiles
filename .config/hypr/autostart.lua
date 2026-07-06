@@ -7,7 +7,7 @@ local programs = {
 
 hl.on("hyprland.start", function ()
   hl.exec_cmd("noctalia")
-  hl.exec_cnd("hyprpaper")
+  hl.exec_cmd("hyprpaper")
   for _,program in pairs(programs) do
     hl.exec_cmd("uwsm app -- " .. program)
   end

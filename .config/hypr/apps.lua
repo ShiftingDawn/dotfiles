@@ -1,7 +1,7 @@
 local terminal    = "alacritty"
 local menu        = "noctalia msg panel-toggle launcher"
 local fileManager = "dolphin"
-local browser     = "brave"
+local browser     = "zen-browser"
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("uwsm app -- " .. terminal))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))

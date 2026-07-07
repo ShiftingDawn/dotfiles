@@ -13,6 +13,7 @@ zen-browser
 grim
 slurp
 swappy
+hyprqt6engine
 ```
 
 ## Required plugins
@@ -23,3 +24,7 @@ hymission
 ```
 nlohmann-json
 ```
+
+# Theming
+ - KDE Plasma Color Scheme: [Catppuccin Mocha](https://github.com/catppuccin/kde)
+ - Alacritty: [Catppuccin Mocha](https://github.com/catppuccin/alacritty)

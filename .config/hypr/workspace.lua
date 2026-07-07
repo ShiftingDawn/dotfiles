@@ -9,7 +9,7 @@ hl.workspace_rule({ workspace = 7, monitor = "DP-1", persistent = true })
 hl.workspace_rule({ workspace = 8, monitor = "DP-1", persistent = true })
 hl.workspace_rule({ workspace = 9, monitor = "DP-1", persistent = true })
 hl.workspace_rule({ workspace = 10, monitor = "DP-1", persistent = true })
-hl.workspace_rule({ workspace = "name:fullscreen" })
+hl.workspace_rule({ workspace = "name:game", default_name = "Game", layout = "scrolling" })
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -21,13 +21,15 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
 
+hl.bind(mainMod .. " + TAB", hl.dsp.window.cycle_next())
+
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
--- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + ALT + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + ALT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+-- Special workspaces
+hl.bind(mainMod .. " + ESCAPE",         hl.dsp.workspace.toggle_special("scratch"))
+hl.bind(mainMod .. " + SHIFT + ESCAPE", hl.dsp.window.move({ workspace = "special:scratch" }))
 
 ---------------------
 ---- LAYER RULES ----

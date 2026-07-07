@@ -17,6 +17,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 ---------------------
 ---- WINDOW RULE ----
 ---------------------
+
 -- Fix some dragging issues with XWayland
 hl.window_rule({
   name  = "fix-xwayland-drags",
@@ -27,6 +28,22 @@ hl.window_rule({
     float      = true,
     fullscreen = false,
     pin        = false,
-    },
+  },
   no_focus = true,
+})
+
+hl.window_rule({
+  name      = "games-workspace-proton",
+  match     = { xdg_tag = "proton-game" },
+  workspace = "name:game"
+})
+hl.window_rule({
+  name      = "games-workspace-genshin-launcher",
+  match     = { initial_class = "moe.launcher.an-anime-game-launcher" },
+  workspace = "name:game"
+})
+hl.window_rule({
+  name      = "games-workspace-prism-launcher",
+  match     = { initial_class = "org.prismlauncher.PrismLauncher" },
+  workspace = "name:game"
 })

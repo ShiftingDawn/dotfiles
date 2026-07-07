@@ -14,3 +14,12 @@ grim
 slurp
 swappy
 ```
+
+## Required plugins
+```
+hymission
+```
+### Required plugin packages
+```
+nlohmann-json
+```

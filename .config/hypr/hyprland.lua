@@ -1,5 +1,6 @@
 mainMod = "SUPER"
 
+require("environment")
 require("monitors")
 require("security")
 require("autostart")

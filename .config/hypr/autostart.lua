@@ -1,5 +1,8 @@
 local programs = {
   "/usr/lib/pam_kwallet_init",
+  "hyprpm reload",
+  "noctalia",
+  "hyprpaper",
   "steam -silent",
   "signal-desktop --start-in-tray --password-store=kwallet6",
   "webcord --start-minimized",
@@ -8,11 +11,8 @@ local programs = {
 }
 
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("hyprpm reload")
-  hl.exec_cmd("noctalia")
-  hl.exec_cmd("hyprpaper")
   for _,program in pairs(programs) do
-    hl.exec_cmd("uwsm app -- " .. program)
+    hl.exec_cmd(program)
   end
 end)
 

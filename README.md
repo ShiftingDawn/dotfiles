@@ -4,16 +4,15 @@ Dotfiles I personally use
 
 ## Required programs
 ```
-uwsm
 hyprland
 hyprpaper
+hyprqt6engine
 noctalia
 alacritty
 zen-browser
 grim
 slurp
 swappy
-hyprqt6engine
 ```
 
 ## Required plugins

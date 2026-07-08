@@ -7,6 +7,7 @@ Dotfiles I personally use
 hyprland
 hyprpaper
 hyprqt6engine
+hyprshutdown
 noctalia
 alacritty
 zen-browser

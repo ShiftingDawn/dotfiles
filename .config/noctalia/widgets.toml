@@ -1,0 +1,14 @@
+[widget.audio_visualizer]
+color_2 = "secondary"
+width = 112
+
+[widget.battery]
+device = "/org/freedesktop/UPower/devices/battery_hidpp_battery_0"
+display_mode = "graphic"
+
+[widget.clock]
+format = "{:%d-%m - %H:%M}"
+
+[widget.workspaces]
+display = "name"
+labels_only_when_occupied = true

@@ -1,0 +1,52 @@
+[[shell.session.actions]]
+action = "lock"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "1"
+variant = "default"
+
+[[shell.session.actions]]
+action = "logout"
+command = "hyprshutdown"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "2"
+variant = "default"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "3"
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+command = "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "4"
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+command = "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "5"
+variant = "destructive"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+  [idle.behavior.lock]
+  action = "lock"
+  enabled = true
+  timeout = 60.0
+  [idle.behavior.lock-and-suspend]
+  action = "lock_and_suspend"
+  enabled = true
+  timeout = 300.0
+  [idle.behavior.screen-off]
+  action = "screen_off"
+  enabled = true
+  timeout = 30.0

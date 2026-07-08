@@ -1,0 +1,45 @@
+[bar]
+order = [ "default", "Secondary" ]
+  [bar.default]
+  background_opacity = 0.74999998323619366
+  center = [ "active_window" ]
+  end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "session",
+    "clock"
+  ]
+  margin_edge = 5
+  start = [ "launcher", "wallpaper", "workspaces", "group:g1" ]
+  widget_spacing = 12
+    [bar.default.monitor.DP-1]
+    enabled = false
+    position = "bottom"
+    [[bar.default.monitor.DP-1.capsule_group]]
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "active_window", "audio_visualizer" ]
+    opacity = 1.0
+    padding = 6.0
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "audio_visualizer", "media" ]
+    opacity = 1.0
+    padding = 6.0
+  [bar.Secondary]
+  center = [ "active_window" ]
+  enabled = true
+  end = [ "clock" ]
+  margin_edge = 5
+  position = "bottom"
+  start = [ "workspaces" ]
+    [bar.Secondary.monitor.HDMI-A-1]
+    enabled = false

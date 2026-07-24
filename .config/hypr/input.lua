@@ -4,6 +4,8 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("uwsm stop"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("noctalia msg session lock"))
+hl.bind(mainMod .. " + SHIFT + CTRL + L", hl.dsp.exec_cmd("noctalia msg session lock-and-suspend"))
 hl.bind(mainMod .. " + TAB", hl.plugin.hymission.toggle)
 
 hl.config({

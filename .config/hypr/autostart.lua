@@ -8,6 +8,7 @@ local programs = {
   "webcord --start-minimized",
   "affine",
   "sleep 3 && hyprctl dispatch 'hl.dsp.window.close({window=\"class:AFFiNE\"})'",
+  "jetbrains-toolbox --minimize",
 }
 
 hl.on("hyprland.start", function ()

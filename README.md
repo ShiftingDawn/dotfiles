@@ -14,6 +14,7 @@ zen-browser
 grim
 slurp
 swappy
+jetbrains-toolbox
 ```
 
 ## Required plugins
